@@ -5,3 +5,9 @@ build/
 .coverage
 __pycache__/
 *.py[cod]
+
+# Emacs
+*~
+\#*\#
+.\#*
+tramp

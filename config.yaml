@@ -8,7 +8,10 @@
 # Learn more about config at: https://juju.is/docs/sdk/config
 
 options:
-  thing:
-    default: 🎁
-    description: A thing used by the charm.
+  admin_username:
+    default: admin
+    description: The dashboard admin user.
+    type: string
+  admin_password:
+    description: The dashboard admin's password
     type: string

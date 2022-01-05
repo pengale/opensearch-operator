@@ -7,10 +7,18 @@
 #
 # Learn more about actions at: https://juju.is/docs/sdk/actions
 
-fortune:
-  description: Returns a pithy phrase.
+injest:
+  description: injects a given dataset.
   params:
     fail:
-      description: "Fail with this message"
+      description: "Unable to import data."
+      type: string
+      default: ""
+
+get_creds:
+  description: fetch creds for admin dashboard.
+  params:
+    fail:
+      description: "Could not find any admin credentials. Something has gone very wrong."
       type: string
       default: ""

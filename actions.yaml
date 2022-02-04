@@ -15,7 +15,7 @@ injest:
       type: string
       default: ""
 
-get_creds:
+creds:
   description: fetch creds for admin dashboard.
   params:
     fail:

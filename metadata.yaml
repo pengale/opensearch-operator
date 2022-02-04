@@ -15,13 +15,13 @@ summary: |
 containers:
   opensearch:
     resource: opensearch-image
-  dashboard:  # TODO: separate charm?
-    resource: opensearch-dashboard
+    bases:
+      - name: 'ubuntu-arm'
+        channel: '20.04'
+        architectures: ['arm64']
 
 resources:
   opensearch-image:
     type: oci-image
     description: core engine
-  opensearch-dashboard-image:
-    type: oci-image
-    description: dashboard
+    upstream-source: opensearchproject/opensearch:latest
